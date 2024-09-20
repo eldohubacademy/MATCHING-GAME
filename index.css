@@ -122,7 +122,12 @@ body {
 }
 .form-modal {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
+   flex-direction: column;
+}
+.form-modal ul{
+    background-color: white;
+    padding: 24px;
 }
 .form-modal form{
     display: flex;
