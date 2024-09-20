@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Matching Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="player-info">
+            <div class="player" id="player1">
+                 <span id="player-one-name">player 1</span>   <span id="score1">0</span>
+            </div>
+            <div class="player" id="player2">
+               <span id="player-two-name">player 2</span> <span id="score2">0</span>
+            </div>
+        </div>
+        <div class="game-board" id="gameBoard">
+            <!-- Cards will be generated here by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Modal for win/tie announcement -->
+    <div id="endGameModal" class="modal">
+        <div class="modal-content" id="modalContent"></div>
+    </div>
+    <div class="form-modal" id="form-modal">
+        <form  id="players">
+            <input type="text" name="player-one" id="player-one" required placeholder="player one">
+            <input type="text" name="player-two" id="player-two" required placeholder="player two">
+            <input type="submit" value="START">
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
