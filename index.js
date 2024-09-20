@@ -146,9 +146,10 @@ function updatePlayerUI() {
 function endGame() {
   let message;
   if (scores[1] > scores[2]) {
-    message = "Player 1 Wins!";
+    message = document.getElementById("player-one-name").textContent.toUpperCase() +" Wins!";
+    
   } else if (scores[2] > scores[1]) {
-    message = "Player 2 Wins!";
+    message = document.getElementById("player-two-name").textContent.toUpperCase() +" Wins!";
   } else {
     message = "It's a Tie!";
     reshuffleGame(); // Reshuffle and start again if it's a tie
